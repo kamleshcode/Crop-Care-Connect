@@ -1,0 +1,110 @@
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Weather forecast</title>
+    <link rel="icon" type="image/jpg" href="images/123.jpg">
+
+    
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="title" content="weater forecast" />
+    <meta
+      name="description"
+      content="This is weather forecast page for farmers"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />]
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet"
+    />
+    <script src="assets/js/app.js" type="module"></script>
+    <script src="assets/js/route.js" type="module"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <header class="header">
+      <div class="container">
+        
+         <div class="search-view" data-search-view>
+          <div class="search-wrapper">
+            <input type="search" name="search" placeholder="Search city... " autocomplete="off" class="search-field" data-search-field>
+
+            <button class="icon-btn leading-icon has-state" aria-label="close 
+            search" data-search-toggler>  
+              <span class="m-icon">arrow_back</span>
+            </button>
+          </div>
+          <div class="search-result" data-search-result>
+            
+          </div>
+        </div>
+        <div class="header-actions">
+            <button class="icon-btn has-state" aria-label="open search"
+            data-search-toggler>
+            <span class="m-icon icon">search</span>
+            </button>
+            <a href="#/current-location" class="btn-primary has-state"
+            data-current-location-btn>
+            <span class="m-icon">my_location</span>
+            <span class="span">Current Location</span>
+            </a> 
+            </div>
+      </div>
+    </header>
+
+
+
+    <main>
+        <article class="container" data-container>
+            
+            <div class="content-left">
+              <!--  Current Weather  -->
+              <section class="section current-weather" aria-lable="current weather" data-current-weather>
+              </section>
+                <!-- Forecast -->
+              <section class="section forecast" aria-labelledby="forecast-label" data-5-day-forecast>
+               
+              </section>
+            
+            
+            </div>
+            
+            <div class="content-right">
+              <!-- Highights -->
+              <section class="section highlights" aria-labelledby="highlights-label" data-highlights>
+               </section>
+               <!-- Hourly Forecast-->
+            <section class="section hourly-forecast" aria-label="hourly forecast" data-hourly-forecast>
+            
+            </section>
+              <!-- Footer -->
+    
+            
+            </div>
+  
+            <div class="loading" data-loading></div>
+
+        </article>
+    </main>
+   <!--  error section -->
+    <section class="error-content" data-error-content>
+      <h2 class="heading">404</h2>
+      <p class="body-1">Page not found!</p>
+      <a href="#/weather?lat=51.5073219&lon=-0.1276474" class="btn-primary">
+          <span class="span">Go Home</span>
+      </a>
+    </section>
+
+  </body>
+</html>
